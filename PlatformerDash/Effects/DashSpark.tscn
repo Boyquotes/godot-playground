@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Resources/spark.png" type="Texture" id=1]
+[ext_resource path="res://PlatformerDash/Effects/DashSparkParticlesMaterial.tres" type="Material" id=2]
+[ext_resource path="res://PlatformerDash/Effects/DashSpark.gd" type="Script" id=3]
+
+[node name="DashSpark" type="Particles2D"]
+show_behind_parent = true
+scale = Vector2( 8, 8 )
+emitting = false
+amount = 30
+lifetime = 50.0
+one_shot = true
+speed_scale = 30.0
+explosiveness = 0.8
+randomness = 1.0
+local_coords = false
+process_material = ExtResource( 2 )
+texture = ExtResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
