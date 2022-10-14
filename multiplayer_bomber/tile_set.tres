@@ -1,0 +1,25 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://dyfi41wdainlb"]
+
+[ext_resource type="Texture2D" uid="uid://bvwqalbhoe4m3" path="res://brickfloor.png" id="1_rw3qu"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kd8yi"]
+texture = ExtResource("1_rw3qu")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+3:0/0 = 0
+3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:0/0/physics_layer_0/angular_velocity = 0.0
+
+[resource]
+tile_size = Vector2i(48, 48)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_kd8yi")
